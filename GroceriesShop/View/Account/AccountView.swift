@@ -8,11 +8,114 @@
 import SwiftUI
 
 struct AccountView: View {
+    @StateObject var mainVM = MainViewModel.shared
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            VStack{
+                HStack(spacing: 15) {
+                    Image("u1")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 60, height: 60)
+                        .cornerRadius(30)
+                    VStack{
+                        HStack {
+                            Text(mainVM.userObj.username)
+                                .font(.customfont(.semibold, fontSize: 16))
+                            Image(systemName: "pencil")
+                            Spacer()
+                        }
+                        
+                        Text(mainVM.userObj.email)
+                            .font(.customfont(.regular, fontSize: 16))
+                            .foregroundStyle(.secondary)
+                            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: .infinity, alignment: .leading)
+                            .accentColor(.secondaryText)
+                    }
+                    
+                }
+                .padding(.horizontal, 20)
+                .padding(.top, .topInsets)
+                
+                Divider()
+                ScrollView {
+                    LazyVStack{
+                        NavigationLink{
+                            MyOrdersView()
+                        } label: {
+                            AccountRow(title: "Order", icon: "a_order")
+                        }
+                        NavigationLink{
+                            MyDetailView()
+                        } label: {
+                            AccountRow(title: "My Details", icon: "a_my_detail")
+                        }
+                       
+                        NavigationLink{
+                            DeliveryAddressView()
+                        } label: {
+                            AccountRow(title: "Delivery Address", icon: "a_delivery_address")
+                        }
+                        NavigationLink{
+                            PaymentMethodView()
+                        } label: {
+                            AccountRow(title: "Payment Methods", icon: "paymenth_methods")
+                        }
+                        
+                        NavigationLink{
+                            PromoCodeView()
+                        } label: {
+                            AccountRow(title: "Promo Code", icon: "a_promocode")
+                        }
+                    }
+                    VStack{
+                        NavigationLink{
+                            NotificationView()
+                        } label: {
+                            AccountRow(title: "Notifications", icon: "a_noitification")
+                        }
+                        
+                        AccountRow(title: "Help", icon: "a_help")
+                        AccountRow(title: "About", icon: "a_about")
+                    }
+                    
+                    Button {
+                        MainViewModel.shared.logout()
+                    } label: {
+                        ZStack {
+                            Text("Log Out")
+                                .font(.customfont(.semibold, fontSize: 18))
+                                .foregroundColor(.primaryApp)
+                                .multilineTextAlignment(.center)
+                            
+                            HStack{
+                                Spacer()
+                                Image("logout")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 20, height: 20)
+                                    .padding(.trailing, 20)
+                                
+                            }
+                        }
+                    }
+                    .frame(minWidth: 0,maxWidth: .infinity, minHeight: 60, maxHeight: 60 )
+                    .background(Color(hex: "F2F3F2"))
+                    .cornerRadius(20)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 15)
+                }
+                
+                
+            }
+            .padding(.bottom, .bottomInsets + 60)
+        }
+        .ignoresSafeArea()
     }
 }
 
 #Preview {
-    AccountView()
+    NavigationView {
+        AccountView()
+    }
 }

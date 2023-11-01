@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "898870A3-D817-444A-99AB-03E5F2CB63B5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB76BB4A-5108-4B6F-96B9-7125444F6C51"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "init(prodObj:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9F803F1D-2EB4-4D4E-A1FC-19AFF79A92A3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "serviceCallDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9F803F1D-2EB4-4D4E-A1FC-19AFF79A92A3 - 58b21d1ac781fcda"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GroceriesShop.ProductDetailViewModel.serviceCallDetail() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "116">
+               </Location>
+               <Location
+                  uuid = "9F803F1D-2EB4-4D4E-A1FC-19AFF79A92A3 - 9ed033d13e7f3692"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in GroceriesShop.ProductDetailViewModel.serviceCallDetail() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7ED478DB-4989-4EC1-B555-FFC56FC64496"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
+            landmarkName = "serviceCallDetail()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7ED478DB-4989-4EC1-B555-FFC56FC64496 - 9ed033d13e7f361e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in GroceriesShop.ProductDetailViewModel.serviceCallDetail() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1008">
+               </Location>
+               <Location
+                  uuid = "7ED478DB-4989-4EC1-B555-FFC56FC64496 - 9ed033d13e7f361e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in GroceriesShop.ProductDetailViewModel.serviceCallDetail() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/ProductDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "1400">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "583CE5E5-A977-43EB-8208-5D0893367AE6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceriesShop/ViewModel/CartViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "serviceCallList()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "583CE5E5-A977-43EB-8208-5D0893367AE6 - ac750c1f7aa765c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in GroceriesShop.CartViewModel.serviceCallList() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/CartViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "1396">
+               </Location>
+               <Location
+                  uuid = "583CE5E5-A977-43EB-8208-5D0893367AE6 - b2b14268c5d95991"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Any) -&gt; GroceriesShop.CartItemModel in closure #1 (Swift.Optional&lt;Swift.AnyObject&gt;) -&gt; () in GroceriesShop.CartViewModel.serviceCallList() -&gt; ()"
+                  moduleName = "GroceriesShop"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/klabs_mobile/Documents/Code/GroceriesShop/GroceriesShop/ViewModel/CartViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "521E7C84-4FCB-44F3-A5AE-05FC04049686"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GroceriesShop/ViewModel/PromoCodeViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "serviceCallList()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

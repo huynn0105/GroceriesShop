@@ -1,5 +1,5 @@
 //
-//  MyOrderView.swift
+//  MyOrderRow.swift
 //  GroceriesShop
 //
 //  Created by Klabs Mobile on 27/10/2023.
@@ -8,13 +8,14 @@
 import SwiftUI
 import SDWebImageSwiftUI
 
-struct MyOrderView: View {
+struct MyOrderRow: View {
     @State var mObj: MyOrderModel
     var body: some View {
         VStack{
             HStack {
                 Text("Order No: #\(mObj.orderId)")
                     .font(.customfont(.semibold, fontSize: 18))
+                    .foregroundColor(.primaryText)
                 Spacer()
                 Text(getOrderStatus(mObj: mObj))
                     .font(.customfont(.semibold, fontSize: 18))
@@ -36,6 +37,7 @@ struct MyOrderView: View {
                     HStack {
                         Text("Items")
                             .font(.customfont(.semibold, fontSize: 16))
+                            .foregroundColor(.primaryText)
                         Text(mObj.names).font(.customfont(.semibold, fontSize: 14))
                             .foregroundColor(.secondary)
                             .multilineTextAlignment(.center)
@@ -45,6 +47,7 @@ struct MyOrderView: View {
                     HStack {
                         Text("Delivery Type")
                             .font(.customfont(.semibold, fontSize: 16))
+                            .foregroundColor(.primaryText)
                         Text(getDeliveryType(mObj: mObj)).font(.customfont(.semibold, fontSize: 14))
                             .foregroundColor(.secondary)
                         
@@ -52,6 +55,7 @@ struct MyOrderView: View {
                     HStack {
                         Text("Payment Type")
                             .font(.customfont(.semibold, fontSize: 16))
+                            .foregroundColor(.primaryText)
                         Text(getPaymentType(mObj: mObj)).font(.customfont(.semibold, fontSize: 14))
                             .foregroundColor(.secondary)
                         
@@ -59,6 +63,7 @@ struct MyOrderView: View {
                     HStack {
                         Text("Payment Status")
                             .font(.customfont(.semibold, fontSize: 16))
+                            .foregroundColor(.primaryText)
                         Text(getPaymentStatus(mObj: mObj)).font(.customfont(.semibold, fontSize: 16))
                             .foregroundColor(getPaymentStatusColor(mObj: mObj))
                         
@@ -76,7 +81,7 @@ struct MyOrderView: View {
         case 2:
             return "Accepted"
         case 3:
-            return "Delivery"
+            return "Delivered"
         case 4:
             return "Cancel"
         case 5:
@@ -86,8 +91,8 @@ struct MyOrderView: View {
         }
     }
     
-    func getPaymentType(mObj: MyOrderModel) -> String {
-        switch mObj.paymentType {
+    func getDeliveryType(mObj: MyOrderModel) -> String {
+        switch mObj.deliverType {
         case 1:
             return "Delivery"
         case 2:
@@ -98,7 +103,7 @@ struct MyOrderView: View {
         }
     }
     
-    func getDeliveryType(mObj: MyOrderModel) -> String {
+    func  getPaymentType(mObj: MyOrderModel) -> String {
         switch mObj.paymentType {
         case 1:
             return "Cash On Delivery"
@@ -162,25 +167,25 @@ struct MyOrderView: View {
 }
 
 #Preview {
-    MyOrderView(mObj: MyOrderModel(dict: [
+    MyOrderRow(mObj: MyOrderModel(dict: [
         "order_id": 1,
-                    "cart_id": "5,4,3,2",
-                    "total_price": 26.910000000000004,
-                    "user_pay_price": 26.219,
-                    "discount_price": 2.6910000000000007,
-                    "deliver_price": 2,
-                    "deliver_type": 1,
-                    "payment_type": 1,
-                    "payment_status": 1,
-                    "order_status": 3,
-                    "status": 1,
-                    "created_date": "2023-10-23T04:09:29.000Z",
-                    "names": "Organic Banana",
-                    "images": "http://localhost:3001/img/product/202310201251135113XBYXQLjdjL.png",
-                    "user_name": "Huy1",
-                    "phone": "512131331",
-                    "address": "home, hcm",
-                    "city": "hcm",
-                    "state": "hcm",
-                    "postal_code": "131323"]))
+        "cart_id": "5,4,3,2",
+        "total_price": 26.910000000000004,
+        "user_pay_price": 26.219,
+        "discount_price": 2.6910000000000007,
+        "deliver_price": 2,
+        "deliver_type": 1,
+        "payment_type": 1,
+        "payment_status": 1,
+        "order_status": 3,
+        "status": 1,
+        "created_date": "2023-10-23T04:09:29.000Z",
+        "names": "Organic Banana",
+        "images": "http://localhost:3001/img/product/202310201251135113XBYXQLjdjL.png",
+        "user_name": "Huy1",
+        "phone": "512131331",
+        "address": "home, hcm",
+        "city": "hcm",
+        "state": "hcm",
+        "postal_code": "131323"]))
 }

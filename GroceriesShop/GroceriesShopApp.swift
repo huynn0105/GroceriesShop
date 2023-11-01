@@ -9,9 +9,18 @@ import SwiftUI
 
 @main
 struct GroceriesShopApp: App {
+    @StateObject var mainVM = MainViewModel.shared
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                if mainVM.isUserLogin {
+                   MainTabView()
+                } else {
+                    WelcomeView()
+                }
+            }
         }
     }
 }
